@@ -18,7 +18,7 @@ char result[200];      // to save the result of encode/decode
   cout <<"Hello, dear User~" << endl;
 do{
    do{
-   cout << "Do you want encode or decode? (\"1\" for encode; \"2\" for decode):";
+   cout << "Would you like to encode or decode? (\"1\" to encode; \"2\" to decode):";
    cin >>n;    // if time permits, Do input validation;
    } while(n<1 && n>2);
 
@@ -32,7 +32,7 @@ do{
  
 // Change input text to uppercase
  toUpperCase(text);
- // recode the size of input,
+ // recode the size of input
  int count=0; 
    while(text[count] !='\0'){
     count++;
@@ -75,7 +75,7 @@ void toUpperCase(char text[]){
 }
 
 void changKey(char st[], int n){
-  // get number of character of key
+  // get number of characters from the key
   int count=0; 
    while(st[count] !='\0'){
     count++;
@@ -147,6 +147,5 @@ void decode(char text[], char key[], int n){
   cout << "the result is: " << result << endl << endl;;
  
 }
-
 
 
